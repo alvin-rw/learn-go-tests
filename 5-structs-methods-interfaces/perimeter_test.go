@@ -24,7 +24,7 @@ func TestArea(t *testing.T) {
 	})
 
 	t.Run("circles", func(t *testing.T) {
-		circle := Circle{100}
+		circle := Circle{10}
 		got := circle.Area()
 		want := 314.1592653589793
 
