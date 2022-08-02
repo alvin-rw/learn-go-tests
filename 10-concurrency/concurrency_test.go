@@ -12,10 +12,7 @@ func slowStubWebsiteChecker(_ string) bool {
 }
 
 func mockWebsiteChecker(url string) bool {
-	if url == "waat://furtherwe.geds" {
-		return false
-	}
-	return true
+	return url != "waat://furtherwe.geds"
 }
 
 func TestCheckWebsite(t *testing.T) {
